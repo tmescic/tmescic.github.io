@@ -1,24 +1,35 @@
 <html>
 <head>
 	<title>Tihomir's site</title>
-	<link rel="stylesheet" href="style.css" type="text/css"></link>
+	<style>
+		.scroll-wrapper {
+			-webkit-overflow-scrolling: touch;
+  			overflow-y: scroll;
+			width: 400px;
+			height: 400px;
+		}
+		body {
+			background-image : url('background.png'); 
+			font-family: sans-serif;
+			color: #000000;
+		}
+	</style>
+
+<!-- SeatOn online widget  -->
+<script type="text/javascript">
+(function(d, src, c) { var t=d.scripts[d.scripts.length - 1],s=d.createElement('script');s.id='seaton_online_widget';s.async=true;s.src=src;s.onload=s.onreadystatechange=function(){var rs=this.readyState;if(rs&&(rs!='complete')&&(rs!='loaded')){return;}c(this);};t.parentElement.insertBefore(s,t.nextSibling);})(document,
+'https://test.getseat.net/api/v1/public/widget/82AG9D27.js',
+function(e){ SeatOn100009.createWidgets(); });
+</script>
+<!-- End of SeatOn online widget -->
+
+
 </head>
 <body>
 
-<div id="mybutton">
-	 <a href="#popup1">
-		<button class="feedback">MAKE A RESERVATION</button>
-	</a>
-</div>
-
-<div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>Reserve a table</h2>
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-			<iframe style="border-width: 0px" width="100%" height="80%" src="https://getseat.net/#/public/queue/834DA457"></iframe>
-		</div>
+	<div class="scroll-wrapper">
+		<iframe src="https://davidwalsh.name" border="0"></iframe>
 	</div>
-</div>
+
 </body>
 </html>
